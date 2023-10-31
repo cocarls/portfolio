@@ -1,180 +1,187 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+  />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>C<span>C</span></h2>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#sobre">Sobre mi</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="toggle_menu">
+          <i class="fas fa-bars" id="toggle_open"></i>
+          <i class="fas fa-close" id="toggle_close"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="info-content">
+        <span class="info_content_subtitle"> desarrollador frontend</span>
+        <h1>Soy <span>Carlos</span></h1>
+
+        <p class="info_content_p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          facilis minima eveniet accusamus rem sint doloribus quia eligendi
+          expedita optio, dolore quo ipsa atque. Expedita doloremque deleniti
+          alias iste quia?
+        </p>
+      </div>
+      <img src="/img/siuuu-removebg-preview (1).png" alt="" />
+    </main>
+  </div>
+  <div id="sobre" class="about">
+    <img
+      src="/img/Desarrollo-de-software-metodologias-importantes-scaled.jpg"
+      alt=""
     />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <nav class="navbar">
-          <div class="brand">
-            <h2>C<span>C</span></h2>
-          </div>
-          <ul class="menu" id="menu">
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="#sobre">Sobre mi</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-          <div class="toggle_menu">
-            <i class="fas fa-bars" id="toggle_open"></i>
-            <i class="fas fa-close" id="toggle_close"></i>
-          </div>
-        </nav>
-      </header>
-      <main class="main">
-        <div class="info-content">
-          <span class="info_content_subtitle"> desarrollador frontend</span>
-          <h1>Soy <span>Carlos</span></h1>
-          
-          <p class="info_content_p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-            facilis minima eveniet accusamus rem sint doloribus quia eligendi
-            expedita optio, dolore quo ipsa atque. Expedita doloremque deleniti
-            alias iste quia?
-          </p>
-        </div>
-        <img
-          
-          src="/img/siuuu-removebg-preview (1).png"
-          alt=""
-        />
-      </main>
+    <div class="about-info">
+      <h2>Sobre mi</h2>
+      <div class="divider"></div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id
+        cumque asperiores fugit, quis repudiandae accusamus quisquam modi
+        numquam laudantium fugiat enim eum pariatur amet illum recusandae
+        debitis reprehenderit sed?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id
+        cumque asperiores fugit, quis repudiandae accusamus quisquam modi
+        numquam laudantium fugiat enim eum pariatur amet illum recusandae
+        debitis reprehenderit sed?
+      </p>
     </div>
-    <div id="sobre" class="about">
-      <img
-        src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/about_grtker.png"
-        alt=""
-      />
-      <div class="about-info">
-        <h2>Sobre mi</h2>
-        <div class="divider"></div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id
-          cumque asperiores fugit, quis repudiandae accusamus quisquam modi
-          numquam laudantium fugiat enim eum pariatur amet illum recusandae
-          debitis reprehenderit sed?
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id
-          cumque asperiores fugit, quis repudiandae accusamus quisquam modi
-          numquam laudantium fugiat enim eum pariatur amet illum recusandae
-          debitis reprehenderit sed?
-        </p>
-      </div>
+  </div>
+  <div class="portfolio">
+    <div id="portafolio" class="portfolio-heading">
+      <h2>Portafolio</h2>
+      <div class="divider"></div>
     </div>
-    <div  class="portfolio">
-      <div id="portafolio" class="portfolio-heading">
-        <h2>Portafolio</h2>
-        <div class="divider"></div>
+    <!-- ajustar -->
+    <div class="container">
+      <div class="card">
+        <div class="rym"></div>
+        <div class="card__title">
+          <h2>Rick and Morty</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a
+            href="https://github.com/cocarls/rick-and-morty-week3"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a
+              href="https://heartfelt-marshmallow-01d93e.netlify.app/"
+              target="_blank"
+              >Project Details</a
+            >
+          </button>
+        </div>
       </div>
-      <!-- ajustar -->
-      <div class="container">
-        <div class="card">
-          <div class="card__img"></div>
-          <div class="card__title">
-            <h2>Descripcion proyecto</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="#">Project Details</a>
-            </button>
-          </div>
+      <div class="card">
+        <div class="fp"></div>
+        <div class="card__title">
+          <h2>Pokemon</h2>
         </div>
-        <div class="card">
-          <div class="card__img"></div>
-          <div class="card__title">
-            <h2>Descripcion proyecto</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="#">Project Details</a>
-            </button>
-          </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/cocarls/pokedex" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-code"></i>
+          </a>
         </div>
-        <div class="card">
-          <div class="card__img"></div>
-          <div class="card__title">
-            <h2>Descripcion proyecto</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="#">Project Details</a>
-            </button>
-          </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a
+              href="https://beautiful-cactus-666cf8.netlify.app/"
+              target="_blank"
+              >Project Details</a
+            >
+          </button>
         </div>
-        <div class="card">
-          <div class="card__img"></div>
-          <div class="card__title">
-            <h2>Descripcion proyecto</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="#">Project Details</a>
-            </button>
-          </div>
+      </div>
+      <div class="card">
+        <div class="fd"></div>
+        <div class="card__title">
+          <h2>clima</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/cocarls/climate-week2" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="#">Project Details</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="js"></div>
+        <div class="card__title">
+          <h2>preguntas js</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/cocarls/question-js" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="#">Project Details</a>
+          </button>
         </div>
       </div>
     </div>
-  
-    <!-- <div class="contact-section">
+  </div>
+
+  <!-- <div class="contact-section">
       <div class="contact-heading">
         <h2>Contactame</h2>
         <div class="divider"></div>
       </div>
       <div id="contacto" class="container-contact">
          <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png" alt=""> -->
-        <!-- <div class="contact-form">
+  <!-- <div class="contact-form">
           <h4>Enviar un mensaje...</h4>
           <form class="form-group">
             <input type="text" placeholder="Nombre" class="input" />
@@ -188,20 +195,18 @@
         </div>
       </div>
     </div> -->
-  
-    <footer class="footer">
-      <div class="footer-content">
-        <h2 id="contacto">Carlos Coronado</h2>
-        <h5>Desarrollador Frontend</h5>
-      </div>
-      <div class="sotial-networks">
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-linkedin"></i></a>
-        <a href=""><i class="fab fa-twitter-square"></i></a>
-        
-      </div>
-      <h4 class="correo">carloscoronadouribe@gmail.com</h4>
-    </footer>
-    <script src="/js/script.js"></script>
-  </body>
-  
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 id="contacto">Carlos Coronado</h2>
+      <h5>Desarrollador Frontend</h5>
+    </div>
+    <div class="sotial-networks">
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-twitter-square"></i></a>
+    </div>
+    <h4 class="correo">carloscoronadouribe@gmail.com</h4>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
