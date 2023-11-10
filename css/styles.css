@@ -1,26 +1,25 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 * {
+  /* border: solid 2px red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-  html {
-    scroll-behavior: smooth;
-  }
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   /* font-family: "Roboto", sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: black;
 }
 
 .wrapper {
-  width: 100vw;
+   /* width: 100vw; */
+  width: 100%; 
   height: 100vh;
   background-color: #191c32;
   color: #fff;
@@ -33,11 +32,11 @@ body {
 .brand {
   margin-top: -7px;
 }
-.brand span{
+.brand span {
   color: aqua;
   font-size: 30px;
 }
-.brand h2{
+.brand h2 {
   font-size: 30px;
 }
 .menu {
@@ -69,7 +68,8 @@ body {
   transition: 1s;
 }
 
-.toggle_menu, .info_content_subtitle{
+.toggle_menu,
+.info_content_subtitle {
   display: none;
 }
 
@@ -86,7 +86,7 @@ body {
 .main img {
   border: 7px solid aqua;
   width: 400px;
-   height: 520px; 
+  height: 520px;
   /* z-index: 1; */
   min-height: 300px;
 }
@@ -116,14 +116,11 @@ h1 {
   box-shadow: none;
 }
 
-
-
 .about {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   width: 100vw;
   align-items: center;
-  
 }
 
 .about img {
@@ -181,7 +178,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-   flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .card {
@@ -197,27 +194,27 @@ h1 {
   background-size: cover;
 }
 
- .rym{
+.rym {
   width: 100%;
   height: 150px;
   background-image: url(/img/rick-morty-pelicula.jpg);
   background-size: cover;
 }
 
-.fp{
+.fp {
   width: 100%;
   height: 150px;
   background-image: url(/img/fondopokemon.jpeg);
   background-size: cover;
 }
-.fd{
+.fd {
   width: 100%;
   height: 150px;
   background-image: url(/img/fondoclima.jpg);
   background-size: cover;
 }
 
-.js{
+.js {
   width: 100%;
   height: 150px;
   background-image: url(/img/javascript-code.jpg);
@@ -471,40 +468,37 @@ h1 {
   text-align: center;
 }
 
-.sotial-networks{
+.sotial-networks {
   display: flex;
   justify-content: space-evenly;
   width: 300px;
   margin-top: 1em;
 }
 
-
-
 .sotial-networks i {
   font-size: 1.5em;
   color: #191c32;
 }
 
-.correo{
-  
-  
+.correo {
   margin-top: 10px;
   /* height: 100%; */
   background-color: aqua;
 }
-
-@media screen and (max-width: 800px){
-
+.probando{
+  display: none;
+}
+@media screen and (max-width: 800px) {
   /* .portfolio .container{
     display: grid;
   } */
-  .contact-section .contact-heading{
+  .contact-section .contact-heading {
     margin-right: 2em;
   }
-  .form-group{
+  .form-group {
     width: 80vw;
   }
-  .menu{
+  .menu {
     flex-direction: column;
     justify-content: center;
     position: absolute;
@@ -514,56 +508,65 @@ h1 {
     background-color: #2b3058;
     z-index: 1;
     transform: translateX(-110%);
-    transition: all .5s ease-in-out;
-    
+    transition: all 0.5s ease-in-out;
   }
-  .show_menu{
+  .show_menu {
     transform: translateX(0%);
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
-  .menu li{
+  .menu li {
     margin: 2em;
   }
-  .toggle_menu{
+  .toggle_menu {
     display: block;
   }
   .fa-bars {
     font-size: 1.5em;
-    margin-top: -.2em;
+    margin-top: -0.2em;
   }
-  .toggle_menu .fa-close{
+  .toggle_menu .fa-close {
     font-size: 1.7em;
     display: none;
   }
-  .main,.about{
+
+  .main{
+    height: 500px;
+  }
+
+
+  .main,
+  .about {
     display: flex;
     flex-direction: column-reverse;
-
   }
-  
-  .main img{
+
+  .main img {
     width: 100%;
     height: 50px;
     /* min-height: 300px; */
     width: min(70%, 350px);
     margin-bottom: 3em;
   }
-  .info-content{
+  .info-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  .info_content_subtitle{
+  /* .probando{
+    display: block;
+  } */
+  .info_content_subtitle {
     margin-bottom: 1em;
   }
-  .info-content, .info_content_subtitle{
+  .info-content,
+  .info_content_subtitle {
     display: block;
   }
-  .info_content_p{
+  .info_content_p {
     display: none;
   }
-  .footer-content h2{
+  .footer-content h2 {
     font-size: 35px;
   }
 }
