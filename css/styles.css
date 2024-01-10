@@ -17,6 +17,19 @@ body {
   color: black;
 }
 
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra */
+}
+
+::-webkit-scrollbar-track {
+  background: #00001a; /* Color de fondo de la pista */
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray; /* Color del 'scrollbar' */
+  border-radius: 4px; /* Borde redondeado */
+}
+
 .wrapper {
    /* width: 100vw; */
   width: 100%; 
@@ -96,8 +109,41 @@ h1 {
 }
 
 .info-content span {
+  /* color: aqua; */
+}
+
+.myname {
   color: aqua;
 }
+
+
+.typed-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap; /* Evita saltos de línea */
+  position: relative; /* Añade posición relativa para posicionar el cursor */
+  border-right: .15em solid #191c32; /* Cambia el color o estilo del cursor de escritura */
+  animation: typing 6s steps(30, end) infinite; /* Aplicar animación de escritura gradual */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typed-text::after {
+  content: '|'; /* Carácter de cursor */
+  position: absolute; /* Posición absoluta para el cursor */
+  animation: blink-caret 1s step-end infinite; /* Animación del cursor */
+  margin-left: 3px; /* Ajusta la posición del cursor después de 'Carlos' */
+}
+
+@keyframes blink-caret {
+  from, to { opacity: 0; }
+  50% { opacity: 1; } /* Hace que el cursor parpadee */
+}
+
+
 
 .download-cv {
   padding: 10px 20px;
@@ -117,6 +163,8 @@ h1 {
 }
 
 .about {
+
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   width: 100vw;
@@ -129,6 +177,7 @@ h1 {
 }
 
 .about-info {
+  
   grid-column: 5/10;
   padding: 3em;
 }
@@ -137,6 +186,8 @@ h1 {
   font-size: 2em;
   color: #191c32;
 }
+
+
 
 .divider {
   height: 4px;
@@ -200,12 +251,53 @@ h1 {
   background-image: url(/img/rick-morty-pelicula.jpg);
   background-size: cover;
 }
+.rymhover {
+  
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden; 
+  /* transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease; */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+
+}
+
+.rym:hover .rymhover{
+  
+  opacity: 1; 
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  background-color: black;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  
+}
+
 
 .fp {
   width: 100%;
   height: 150px;
   background-image: url(/img/fondopokemon.jpeg);
   background-size: cover;
+}
+.fphover {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden; 
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  scrollbar-color: gray black; 
+  scrollbar-width: thin;
+}
+
+.fp:hover .fphover{
+  opacity: 1; 
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  background-color: black;
+  overflow-y: auto;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 .fd {
   width: 100%;
@@ -214,11 +306,48 @@ h1 {
   background-size: cover;
 }
 
+.fdhover {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden; 
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+ 
+.fd:hover .fdhover {
+  opacity: 1; 
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  background-color: black;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
 .js {
   width: 100%;
   height: 150px;
   background-image: url(/img/javascript-code.jpg);
   background-size: cover;
+}
+
+.jshover {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden; 
+  transition: opacity 0.3s ease, max-width 0.5s ease;
+  scrollbar-color: gray black; 
+  scrollbar-width: thin;
+}
+
+.js:hover .jshover {
+  opacity: 1; 
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  background-color: black;
+  overflow-y: auto;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
 .card__title {
