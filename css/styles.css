@@ -31,8 +31,8 @@ body {
 }
 
 .wrapper {
-   /* width: 100vw; */
-  width: 100%; 
+  /* width: 100vw; */
+  width: 100%;
   height: 100vh;
   background-color: #191c32;
   color: #fff;
@@ -116,34 +116,40 @@ h1 {
   color: aqua;
 }
 
-
 .typed-text {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap; /* Evita saltos de línea */
   position: relative; /* Añade posición relativa para posicionar el cursor */
-  border-right: .15em solid #191c32; /* Cambia el color o estilo del cursor de escritura */
+  border-right: 0.15em solid #191c32; /* Cambia el color o estilo del cursor de escritura */
   animation: typing 6s steps(30, end) infinite; /* Aplicar animación de escritura gradual */
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .typed-text::after {
-  content: '|'; /* Carácter de cursor */
+  content: "|"; /* Carácter de cursor */
   position: absolute; /* Posición absoluta para el cursor */
   animation: blink-caret 1s step-end infinite; /* Animación del cursor */
   margin-left: 3px; /* Ajusta la posición del cursor después de 'Carlos' */
 }
 
 @keyframes blink-caret {
-  from, to { opacity: 0; }
-  50% { opacity: 1; } /* Hace que el cursor parpadee */
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  } /* Hace que el cursor parpadee */
 }
-
-
 
 .download-cv {
   padding: 10px 20px;
@@ -163,7 +169,6 @@ h1 {
 }
 
 .about {
-
   background-color: white;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -177,7 +182,6 @@ h1 {
 }
 
 .about-info {
-  
   grid-column: 5/10;
   padding: 3em;
 }
@@ -186,8 +190,6 @@ h1 {
   font-size: 2em;
   color: #191c32;
 }
-
-
 
 .divider {
   height: 4px;
@@ -252,27 +254,22 @@ h1 {
   background-size: cover;
 }
 .rymhover {
-  
   opacity: 0;
   width: 0;
   height: 0;
-  overflow: hidden; 
+  overflow: hidden;
   /* transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease; */
   transition: opacity 0.3s ease, max-height 0.3s ease;
-
 }
 
-.rym:hover .rymhover{
-  
-  opacity: 1; 
+.rym:hover .rymhover {
+  opacity: 1;
   width: 100%;
   height: 150px;
   padding: 10px;
   background-color: black;
   transition: opacity 0.3s ease, max-height 0.3s ease;
-  
 }
-
 
 .fp {
   width: 100%;
@@ -284,14 +281,14 @@ h1 {
   opacity: 0;
   width: 0;
   height: 0;
-  overflow: hidden; 
+  overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
-  scrollbar-color: gray black; 
+  scrollbar-color: gray black;
   scrollbar-width: thin;
 }
 
-.fp:hover .fphover{
-  opacity: 1; 
+.fp:hover .fphover {
+  opacity: 1;
   width: 100%;
   height: 150px;
   padding: 10px;
@@ -310,12 +307,12 @@ h1 {
   opacity: 0;
   width: 0;
   height: 0;
-  overflow: hidden; 
+  overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
- 
+
 .fd:hover .fdhover {
-  opacity: 1; 
+  opacity: 1;
   width: 100%;
   height: 150px;
   padding: 10px;
@@ -334,14 +331,14 @@ h1 {
   opacity: 0;
   width: 0;
   height: 0;
-  overflow: hidden; 
+  overflow: hidden;
   transition: opacity 0.3s ease, max-width 0.5s ease;
-  scrollbar-color: gray black; 
+  scrollbar-color: gray black;
   scrollbar-width: thin;
 }
 
 .js:hover .jshover {
-  opacity: 1; 
+  opacity: 1;
   width: 100%;
   height: 150px;
   padding: 10px;
@@ -614,7 +611,7 @@ h1 {
   /* height: 100%; */
   background-color: aqua;
 }
-.probando{
+.probando {
   display: none;
 }
 @media screen and (max-width: 800px) {
@@ -658,10 +655,9 @@ h1 {
     display: none;
   }
 
-  .main{
+  .main {
     height: 500px;
   }
-
 
   .main,
   .about {
