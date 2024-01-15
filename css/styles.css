@@ -99,9 +99,17 @@ body {
 .main img {
   border: 7px solid aqua;
   width: 400px;
-  height: 520px;
+  height: 500px;
   /* z-index: 1; */
   min-height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.main img:hover {
+  transform: scale(1.1);
+  border-color: white; /* Cambiamos el color del borde al hacer hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Agregamos una sombra */
+  /* filter: grayscale(30%) */
 }
 
 h1 {
