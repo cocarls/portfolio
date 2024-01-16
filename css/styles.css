@@ -22,7 +22,9 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #00001a; /* Color de fondo de la pista */
+  background: #00001a;
+  
+  opacity: 100%; /* Color de fondo de la pista */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -116,10 +118,9 @@ h1 {
   font-size: clamp(4vw, 1.5em, 3em);
 }
 
-.info-content span {
-  /* color: aqua; */
-}
-
+/*.info-content span {
+   color: aqua; 
+}*/
 .myname {
   color: aqua;
 }
@@ -192,6 +193,7 @@ h1 {
 .about-info {
   grid-column: 5/10;
   padding: 3em;
+
 }
 
 .about-info h2 {
@@ -276,6 +278,7 @@ h1 {
   height: 150px;
   padding: 10px;
   background-color: black;
+  opacity: 0.8;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
@@ -301,6 +304,7 @@ h1 {
   height: 150px;
   padding: 10px;
   background-color: black;
+  opacity: 0.8;
   overflow-y: auto;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
@@ -325,6 +329,7 @@ h1 {
   height: 150px;
   padding: 10px;
   background-color: black;
+  opacity: 0.8;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
@@ -351,6 +356,7 @@ h1 {
   height: 150px;
   padding: 10px;
   background-color: black;
+  opacity: 0.8;
   overflow-y: auto;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
@@ -678,7 +684,8 @@ h1 {
     height: 50px;
     /* min-height: 300px; */
     width: min(70%, 350px);
-    margin-bottom: 3em;
+    /* margin-bottom: 5em; */
+    
   }
   .info-content {
     display: flex;
