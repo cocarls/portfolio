@@ -1,265 +1,302 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="/img/cc-removebg-preview.png" />
-  <title>portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
-  />
-</head>
-<body>
-  <div class="wrapper">
-    <header>
-      <nav class="navbar">
-        <div class="brand">
-          <h2>C<span>C</span></h2>
-        </div>
-        <ul class="menu" id="menu">
-          <li><a href="#" class="active">Inicio</a></li>
-          <li><a href="#sobre">Sobre mí</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <div class="toggle_menu">
-          <i class="fas fa-bars" id="toggle_open"></i>
-          <i class="fas fa-close" id="toggle_close"></i>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="info-content">
-        <span class="info_content_subtitle"> Desarrollador Full-Satck</span>
-        <!-- <h1>Soy <span class="typed-text">Carlos</span></h1> -->
-        <h1>
-          <span class="typed-text"
-            >Soy <span class="info-content myname">Carlos</span></span
-          >
-        </h1>
-
-        <p class="info_content_p">
-          ¡Hola! Soy Carlos Coronado, soy desarrollador Full-Stack. Mi objetivo
-          es crear experiencias web cautivadoras y funcionales. ¡Explora mi
-          trabajo y descubre el mundo de la programación a través de mis ojos!
-        </p>
-        <a download href="/cv/carlos-coronado-cv.pdf">
-          <button class="download-cv">Descargar CV</button>
-        </a>
-      </div>
-      <img src="/img/SAVE_20240112_161922-removebg-preview.png" alt="" />
-    </main>
-  </div>
-  <div id="sobre" class="about">
-    <img
-      src="/img/Desarrollo-de-software-metodologias-importantes-scaled.jpg"
-      alt=""
+<html data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/img/cc-removebg-preview.png" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
     />
-    <div class="about-info">
-      <h2>Sobre mí</h2>
-      <div class="divider"></div>
-      <p>
-        En mi día a día, encuentro inspiración en la diversidad que nos rodea.
-        Fuera de las líneas de código, disfruto explorando nuevas formas de
-        expresión creativa.
-      </p>
-      <p>
-        Siempre en busca de experiencias auténticas, me gusta descubrir cómo la
-        tecnología puede mejorar y enriquecer nuestras vidas. Bienvenido a mi
-        espacio digital, donde la creatividad se encuentra con la simplicidad.
-      </p>
-    </div>
-  </div>
-  <div class="portfolio">
-    <div id="portafolio" class="portfolio-heading">
-      <h2>Portafolio</h2>
-      <div class="divider"></div>
-    </div>
-    <!-- ajustar -->
-    <div class="container">
-      <div class="card">
-        <div class="rym">
-          <h4 class="rymhover">
-            Use herramientas como JavaScript, React, Axios, Tailwind CSS,tuve
-            que hacer una petición a una api, agregue una paginación para no
-            saturar el escroll.
-          </h4>
-        </div>
-        <div class="card__title">
-          <!-- <h2>Rick and Morty</h2> -->
-          <h4>Locacion de diferentes dimensiones por su respectivo Id.</h4>
-        </div>
-        <div class="card__proyect-links">
-          <a href="https://github.com/cocarls" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="">
-            <i class="fas fa-globe-asia"></i>
-          </a>
-          <a
-            href="https://github.com/cocarls/rick-and-morty-week3"
-            target="_blank"
-          >
-            <i class="fas fa-code"></i>
-          </a>
-        </div>
-        <div class="button-content">
-          <button class="project-details-button download-cv">
-            <a
-              href="https://heartfelt-marshmallow-01d93e.netlify.app/"
-              target="_blank"
-              >Ver proyecto</a
-            >
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="fp">
-          <h4 class="fphover">
-            Use heramientas como JavaScript, React, Axios, Tailwind CSS, manejo
-            de modales para la descripción de cada pokemon, paginación para no
-            saturar scroll mas un buscador de pokemon por su respectiva
-            categoria.
-          </h4>
-        </div>
-        <div class="card__title">
-          <!-- <h2>Pokemon</h2> -->
-          <h4>Filtrado de pokemons por su tipo y su respectiva descripción.</h4>
-        </div>
-        <div class="card__proyect-links">
-          <a href="https://github.com/cocarls" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="">
-            <i class="fas fa-globe-asia"></i>
-          </a>
-          <a href="https://github.com/cocarls/pokedex" target="_blank">
-            <i class="fas fa-code"></i>
-          </a>
-        </div>
-        <div class="button-content">
-          <button class="project-details-button download-cv">
-            <a
-              href="https://beautiful-cactus-666cf8.netlify.app/"
-              target="_blank"
-              >Ver proyecto</a
-            >
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="fd">
-          <h4 class="fdhover">
-            Use heramientas como JavaScript, React, Axios, Tailwind CSS, consumi
-            una api, cambio de modulos para el modo responsivo.
-          </h4>
-        </div>
-        <div class="card__title">
-          <!-- <h2>clima</h2> -->
-          <h4>
-            Ver el clima de manera local mas un icono referente a dicho clima.
-          </h4>
-        </div>
-        <div class="card__proyect-links">
-          <a href="https://github.com/cocarls" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="">
-            <i class="fas fa-globe-asia"></i>
-          </a>
-          <a href="https://github.com/cocarls/climate-week2" target="_blank">
-            <i class="fas fa-code"></i>
-          </a>
-        </div>
-        <div class="button-content">
-          <button class="project-details-button download-cv">
-            <a
-              href="https://fastidious-pithivier-89b272.netlify.app/"
-              target="_blank"
-              >Ver proyecto</a
-            >
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="js">
-          <h4 class="jshover">
-            Use heramientas como JavaScript, React, proyecto interactivo
-            utilizando React que desafía a los usuarios con cinco preguntas
-            aleatorias. Esta aplicación permite a los usuarios responder las
-            preguntas y les muestra cuántas han respondido correctamente e
-            incorrectamente. Es una experiencia sencilla pero entretenida que
-            pone a prueba el conocimiento en una variedad de temas sobre
-            JavaScript.
-          </h4>
-        </div>
-        <div class="card__title">
-          <!-- <h2>preguntas js</h2> -->
-          <h4>
-            Preguntas aleatorias y un contador de preguntas correctas e
-            incorrectas.
-          </h4>
-        </div>
-        <div class="card__proyect-links">
-          <a href="https://github.com/cocarls" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="">
-            <i class="fas fa-globe-asia"></i>
-          </a>
-          <a href="https://github.com/cocarls/question-js" target="_blank">
-            <i class="fas fa-code"></i>
-          </a>
-        </div>
-        <div class="button-content">
-          <button class="project-details-button download-cv">
-            <a
-              href="https://incomparable-pie-259072.netlify.app/"
-              target="_blank"
-              >Ver proyecto</a
-            >
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>C<span>C</span></h2>
+          </div>
 
-  <!-- <div class="contact-section">
-      <div class="contact-heading">
-        <h2>Contactame</h2>
+          <!-- <div class="main__switcher">
+            <input type="checkbox" class="main__check" />
+            <div class="main__option"></div>
+          </div> -->
+          <ul class="menu" id="menu">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contactame">Contacto</a></li>
+          </ul>
+          <div class="toggle_menu">
+            <i class="fas fa-bars" id="toggle_open"></i>
+            <i class="fas fa-close" id="toggle_close"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="info-content">
+          <div class="main__switcher">
+            <!--checkbox-apple-->
+            <input
+              class="main__check"
+              id="check-apple"
+              type="checkbox"
+            /><!--yep-->
+            <label for="check-apple"></label>
+          </div>
+          <span class="info_content_subtitle"> Desarrollador Full-Satck</span>
+          <!-- <h1>Soy <span class="typed-text">Carlos</span></h1> -->
+          
+          <h1>
+            <span class="typed-text"
+              >Soy <span class="info-conten myname">Carlos</span></span
+            >
+          </h1>
+
+          <p class="info_content_p">
+            ¡Hola! Soy Carlos Coronado, soy desarrollador Full-Stack. Mi
+            objetivo es crear experiencias web cautivadoras y funcionales.
+            ¡Explora mi trabajo y descubre el mundo de la programación a través
+            de mis ojos!
+          </p>
+          <a download href="/cv/carlos-coronado-cv.pdf">
+            <button class="mybutton">Descargar CV</button>
+          </a>
+        </div>
+        <img src="/img/SAVE_20240112_161922-removebg-preview.png" alt="" />
+      </main>
+    </div>
+    <div id="sobre" class="about">
+      <img
+        src="/img/Desarrollo-de-software-metodologias-importantes-scaled.jpg"
+        alt=""
+      />
+      <div class="about-info">
+        <h2>Sobre mí</h2>
+        <div class="divider"></div>
+        <p>
+          En mi día a día, encuentro inspiración en la diversidad que nos rodea.
+          Fuera de las líneas de código, disfruto explorando nuevas formas de
+          expresión creativa.
+        </p>
+        <p>
+          Siempre en busca de experiencias auténticas, me gusta descubrir cómo
+          la tecnología puede mejorar y enriquecer nuestras vidas. Bienvenido a
+          mi espacio digital, donde la creatividad se encuentra con la
+          simplicidad.
+        </p>
+      </div>
+    </div>
+    <div class="portfolio">
+      <div id="portafolio" class="portfolio-heading">
+        <h2>Portafolio</h2>
         <div class="divider"></div>
       </div>
-      <div id="contacto" class="container-contact">
-         <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png" alt=""> -->
-  <!-- <div class="contact-form">
+      <!-- ajustar -->
+      <div class="container">
+        <div class="card">
+          <div class="rym">
+            <h4 class="rymhover">
+              Use herramientas como JavaScript, React, Axios, Tailwind CSS,tuve
+              que hacer una petición a una api, agregue una paginación para no
+              saturar el escroll.
+            </h4>
+          </div>
+          <div class="card__title">
+            <!-- <h2>Rick and Morty</h2> -->
+            <h4>Locacion de diferentes dimensiones por su respectivo Id.</h4>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/cocarls" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a
+              href="https://github.com/cocarls/rick-and-morty-week3"
+              target="_blank"
+            >
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="button-content">
+            <button class="project-details-button download-cv">
+              <a
+                href="https://heartfelt-marshmallow-01d93e.netlify.app/"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="fp">
+            <h4 class="fphover">
+              Use heramientas como JavaScript, React, Axios, Tailwind CSS,
+              manejo de modales para la descripción de cada pokemon, paginación
+              para no saturar scroll mas un buscador de pokemon por su
+              respectiva categoria.
+            </h4>
+          </div>
+          <div class="card__title">
+            <!-- <h2>Pokemon</h2> -->
+            <h4>
+              Filtrado de pokemons por su tipo y su respectiva descripción.
+            </h4>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/cocarls" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="https://github.com/cocarls/pokedex" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="button-content">
+            <button class="project-details-button download-cv">
+              <a
+                href="https://beautiful-cactus-666cf8.netlify.app/"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="fd">
+            <h4 class="fdhover">
+              Use heramientas como JavaScript, React, Axios, Tailwind CSS,
+              consumi una api, cambio de modulos para el modo responsivo.
+            </h4>
+          </div>
+          <div class="card__title">
+            <!-- <h2>clima</h2> -->
+            <h4>
+              Ver el clima de manera local mas un icono referente a dicho clima.
+            </h4>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/cocarls" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="https://github.com/cocarls/climate-week2" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="button-content">
+            <button class="project-details-button download-cv">
+              <a
+                href="https://fastidious-pithivier-89b272.netlify.app/"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="js">
+            <h4 class="jshover">
+              Use heramientas como JavaScript, React, proyecto interactivo
+              utilizando React que desafía a los usuarios con cinco preguntas
+              aleatorias. Esta aplicación permite a los usuarios responder las
+              preguntas y les muestra cuántas han respondido correctamente e
+              incorrectamente. Es una experiencia sencilla pero entretenida que
+              pone a prueba el conocimiento en una variedad de temas sobre
+              JavaScript.
+            </h4>
+          </div>
+          <div class="card__title">
+            <!-- <h2>preguntas js</h2> -->
+            <h4>
+              Preguntas aleatorias y un contador de preguntas correctas e
+              incorrectas.
+            </h4>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/cocarls" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="https://github.com/cocarls/question-js" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="button-content">
+            <button class="project-details-button download-cv">
+              <a
+                href="https://incomparable-pie-259072.netlify.app/"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-heading">
+        <h2 id="contactame">Contactame</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container-contact">
+        <!-- <img
+          src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png"
+          alt=""
+        /> -->
+        
+        <div  class="contact-form">
           <h4>Enviar un mensaje...</h4>
-          <form class="form-group">
-            <input type="text" placeholder="Nombre" class="input" />
-            <input type="email" placeholder="Email" class="input" />
+          <form action="https://formsubmit.co/carloscoronadouribe@gmail.com" method="POST" class="form-group">
+            <input type="text" name="text" placeholder="Nombre" class="input" />
+            <input type="email" name="Email" placeholder="Email" class="input" />
             <textarea
+              type="message"
               name="message"
               placeholder="Enviar un mensaje aqui..."
             ></textarea>
-            <button type="submit" class="btn-submit">Enviar</button>
+            
+            <button type="submit" class="btn-submit mybutton">Enviar</button>
+            <input type="hidden" name="_next" value="https://subtle-travesseiro-9bd545.netlify.app/">
+            <input type="hidden" name="_capcha" value="false">
           </form>
         </div>
       </div>
-    </div> -->
+    </div>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <h2 id="contacto">Carlos Coronado</h2>
-      <h5>Desarrollador Full-Stack</h5>
-    </div>
-    <div class="sotial-networks">
-      <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
-      <a href="https://www.linkedin.com/in/carlosccoronado/" target="_blank"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
-    </div>
-    <h4 class="correo">carloscoronadouribe@gmail.com</h4>
-  </footer>
-  <script src="/js/script.js"></script>
-</body>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2 id="contacto">Carlos Coronado</h2>
+        <h5>Desarrollador Full-Stack</h5>
+      </div>
+      <div class="sotial-networks">
+        <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
+        <a href="https://www.linkedin.com/in/carlosccoronado/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
+      </div>
+      <h4 class="correo">carloscoronadouribe@gmail.com</h4>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/theme.js"></script>
+  </body>
+</html>
